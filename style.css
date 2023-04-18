@@ -41,6 +41,51 @@ text-align: center;
 }
 /* *************************************** ( : ********************************* */
 
+/* //////////////////////////////////feature section///////////////////////// */
+
+.feature-container{
+    margin-top:3.5rem;
+    display: flex;
+justify-content: center;
+border:1px solid palegoldenrod;
+   
+}
+
+.feature-card{
+    max-width:350px;
+    height:230px;
+    border:2px solid red;
+    padding:1.5rem 2rem; 
+    border-radius: 0.5rem;
+    position: relative;
+}
+.feature-card p{
+    margin-top:0.5rem;
+    color:var(--Grayish-Blue);
+    font-weight: 400;
+    font-size: small;
+}
+.feature-card img{
+ /* margin-left:80%;
+ margin-top:14%; */
+ position: absolute;
+ top:60%;
+ left:75%;
+}
+.supervisor {
+    margin-right:1.7rem;
+    margin-top:8rem;
+    
+}
+
+.calculator{
+    margin-left:1.7rem;
+    margin-top:8rem;
+}
+.team-builder{
+    margin-bottom:1.7rem;
+}
+
 
 
 
