@@ -1,94 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-:root{
---Red:hsl(0, 78%, 62%);
---Cyan:hsl(180, 62%, 55%);
---Orange:hsl(34, 97%, 64%);
---Blue:hsl(212, 86%, 64%);
-/* ### Neutral */
---Very-Dark-Blue:hsl(234, 12%, 34%);
---Grayish-Blue:hsl(229, 6%, 66%);
---Very-Light-Gray:hsl(0, 0%, 98%);
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    /* ### Neutral */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
 }
-*{
-margin:0;
-padding:0;
-box-sizing: border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-font-family: 'Poppins', sans-serif;
-font-size: 15px;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
+
 /* ////////////////////////////////header styling///////////////////////// */
-header{
-text-align:center;
-margin-top:3.5rem;
+header {
+    text-align: center;
+    margin-top: 3.5rem;
 }
-header h1{
-font-weight:200;
-color:var(--Very-Dark-Blue);
+
+header h1 {
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
 
 }
-header h2{
-font-weight: 600;
-font-size:1.85rem;
-color:var(--Very-Dark-Blue);
+
+header h2 {
+    font-weight: 600;
+    font-size: 1.85rem;
+    color: var(--Very-Dark-Blue);
 }
- p.heading-para{
-color:var(--Grayish-Blue);
-max-width: 530px;
-margin: 1rem auto;
-text-align: center;
+
+p.heading-para {
+    color: var(--Grayish-Blue);
+    max-width: 530px;
+    margin: 1rem auto;
+    text-align: center;
 }
+
 /* *************************************** ( : ********************************* */
 
 /* //////////////////////////////////feature section///////////////////////// */
 
-.feature-container{
-    margin-top:3.5rem;
+.feature-container {
+    margin-top: 3.5rem;
     display: flex;
-justify-content: center;
-border:1px solid palegoldenrod;
-   
+    justify-content: center;
 }
 
-.feature-card{
-    max-width:350px;
-    height:230px;
-    border:2px solid red;
-    padding:1.5rem 2rem; 
+.feature-card {
+    max-width: 350px;
+   
+    height: 230px;
+    padding: 1.5rem 2rem;
     border-radius: 0.5rem;
     position: relative;
+    box-shadow: 2px 2px   10px rgb(181, 167, 167);
+
+
+    overflow: hidden;
+
 }
-.feature-card p{
-    margin-top:0.5rem;
-    color:var(--Grayish-Blue);
+
+.feature-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+
+}
+
+.feature-card p {
+    margin-top: 0.5rem;
+    color: var(--Grayish-Blue);
     font-weight: 400;
     font-size: small;
 }
-.feature-card img{
- /* margin-left:80%;
- margin-top:14%; */
- position: absolute;
- top:60%;
- left:75%;
+
+.feature-card .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2.3rem;
+
 }
+
 .supervisor {
-    margin-right:1.7rem;
-    margin-top:8rem;
-    
+    margin-right: 1.7rem;
+    margin-top: 8rem;
+
+}
+.supervisor::after{
+    background-color:var(--Cyan) ;
 }
 
-.calculator{
-    margin-left:1.7rem;
-    margin-top:8rem;
+.calculator {
+    margin-left: 1.7rem;
+    margin-top: 8rem;
 }
-.team-builder{
-    margin-bottom:1.7rem;
+.calculator::after{
+    background-color:var(--Blue);
 }
 
+.team-builder {
+    margin-bottom: 1.7rem;
+}
+.team-builder::after{
+    background-color:var(--Red);
+}
+.karma::after{
+background-color: var(--Orange);
+}
 
+footer{
+    margin-top:2rem;
+    text-align: center;
+    font-style: italic;
+}
+footer a{
+    text-decoration: none;
+  
+}
 
-
-
-
-
+/* /////////////////////////responsive/////////////////////// */
+@media screen  and (max-width:1150px) {
+    .feature-container {
+        margin-top: 3rem;
+        flex-direction: column;
+       align-items: center;
+    }
+    .supervisor {
+       margin:1.5rem;
+    }
+    .calculator {
+        /* margin-left: 1.7rem;
+        margin-top: 8rem; */
+        margin:1.5rem;
+    }
+    .team-builder {
+        margin:1.5rem 1.5rem;
+    }
+    .karma{
+      margin:0 1.5rem;
+    }
+    p.heading-para {
+        color: var(--Grayish-Blue);
+        max-width: 500px;
+        margin: 1rem auto;
+        padding: 0 2rem ;
+        text-align: center;
+    }
+    header {
+        text-align: center;
+        margin-top: 3.5rem;
+    }
+    header h1{
+        font-size: 1.6rem;
+    }
+    header h2 {
+   
+        font-size: 1.6rem;
+   
+    }
+    footer{
+        padding:1rem;
+    }
+}
