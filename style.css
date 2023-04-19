@@ -70,6 +70,10 @@ p.heading-para {
     overflow: hidden;
 
 }
+.feature-card h2{
+    font-size: 1.2rem;
+    color:var(--Very-Dark-Blue);
+}
 
 .feature-card::after {
     content: '';
