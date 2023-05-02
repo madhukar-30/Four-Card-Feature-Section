@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/madhukar-30/Four-Card-Feature-Section.git)
-- Live Site URL: [Add live site URL here](https://64404322522a9e1a4fbbdf26--teal-queijadas-6e5f94.netlify.app/)
+- Solution URL: [ solution URL ](https://github.com/madhukar-30/Four-Card-Feature-Section.git)
+- Live Site URL: [ live site URL ](https://64404322522a9e1a4fbbdf26--teal-queijadas-6e5f94.netlify.app/)
 
 ## My process
 
@@ -50,7 +50,7 @@ I learned overflow property of css.
 
 
 ## Author
-- Frontend Mentor - [@master-manas](https://www.frontendmentor.io/profile/master-manas)
+- Frontend Mentor - [@madhukar-30](https://www.frontendmentor.io/profile/madhukar-30)
 
 
 
